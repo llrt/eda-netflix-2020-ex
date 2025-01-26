@@ -1,0 +1,32 @@
+<!-- livebook:{"file_entries":[{"file":{"file_system_id":"local","file_system_type":"local","path":"/home/llrt/dev/workspaces/elixir/eda-netflix-2020-ex/netflix_titles.csv"},"name":"netflix_titles.csv","type":"file"}]} -->
+
+# EDA of Netflix 2020 Dataset in Elixir
+
+```elixir
+Mix.install([
+  {:explorer, "~> 0.10.0"},
+  {:kino, "~> 0.14.0"},
+  {:kino_explorer, "~> 0.1.20"}
+])
+```
+
+## Initial Setup
+
+```elixir
+alias Explorer.DataFrame
+alias Explorer.Series
+```
+
+```elixir
+File.cd(Path.dirname(__ENV__.file))
+```
+
+```elixir
+df = DataFrame.from_csv!("netflix_titles.csv")
+```
+
+```elixir
+
+```
+
+<!-- livebook:{"offset":590,"stamp":{"token":"XCP.R-27sxRXPcO8_rMQK0PysIEKdWR9Ma_n-V9qchXWtUYb_a0JfmarCdsqPM8a4u_iNOZeY5X_lNj20pjSlDBwq-pqp0dqR2sAKUUsug","version":2}} -->
